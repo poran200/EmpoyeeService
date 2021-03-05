@@ -20,6 +20,7 @@ public class Employee implements Serializable {
     private String email;
     private String jobTitle;
     private String phone;
+    @Column(length = 1000)
     private String imageUrl;
     @Column(updatable = false,nullable = false)
     private String employeeCode;
